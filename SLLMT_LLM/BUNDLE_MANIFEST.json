@@ -1,0 +1,94 @@
+{
+ "repository": "SLLMT_LLM",
+ "created_local": "2026-11-12T02:10:16",
+ "builder": "SLLMT_build/bundle/build_github_bundle.py",
+ "model_hash": "2e57138f9f62643b",
+ "input_hash": "c524856286845676",
+ "needs": "나란히 둔 시뮬레이션 폴더 (SMT2020_simulation), model_hash 2e57138f9f62643b",
+ "files": {
+  ".gitignore": {
+   "bytes": 109,
+   "sha256": "afeb1c011715e543f01baeb224ef90d76afef49121d75119aea65653f90d1ac9"
+  },
+  "README.md": {
+   "bytes": 2139,
+   "sha256": "f7e4864308b9f329bc307bda4f4d3f711ec9f366f3388692933eebd69587825a"
+  },
+  "SLLMT.bat": {
+   "bytes": 1291,
+   "sha256": "acfb3fb78ae61e42e85fea56b9ba3060f74586457e15547ce93147c28d7c80d1"
+  },
+  "agent.py": {
+   "bytes": 20814,
+   "sha256": "119d418e1eef083a306b3bb6bb319916904105cc9ad3edfee6228668e2ac480e"
+  },
+  "app.py": {
+   "bytes": 14801,
+   "sha256": "72b08b61f94a7a5eb6fd992dffb93008216b12cc2e0309ae7b6fdaab8a57a076"
+  },
+  "claude_client.py": {
+   "bytes": 9137,
+   "sha256": "2d7f9290b30479aeac6b561247d2a11ffc0b0b9fff8764d9a9abb8c859ee11c3"
+  },
+  "gemini_client.py": {
+   "bytes": 5792,
+   "sha256": "ee56609c43e721088abfdb3061a63c0553068deb2d0445c56ea9b07c6f0ae66a"
+  },
+  "llm_clients.py": {
+   "bytes": 6357,
+   "sha256": "75df1dc42f1d6b758f3cb663998a96c827b3c47e292412a0e755540e3ac380aa"
+  },
+  "openai_client.py": {
+   "bytes": 7425,
+   "sha256": "fd460fbbbb3ac7f185430f6cf1c61ca8cbb61926058f5b577c0f2465cfb7cf52"
+  },
+  "prompts.py": {
+   "bytes": 37636,
+   "sha256": "c5a0ec33172d149ffaf70c17b172f267050b73c7befd66abb529dcb2993a3b42"
+  },
+  "requirements.txt": {
+   "bytes": 346,
+   "sha256": "0ea24e1f14ad3f46e235aff357419eb368b34b31be4f939d2a447c1c31af7ccd"
+  },
+  "run.py": {
+   "bytes": 7047,
+   "sha256": "1b93b3155962d6d77e2e455d35b2d40c46b39f2fb2e9305aff5a012cc209ca84"
+  },
+  "run_job.py": {
+   "bytes": 1737,
+   "sha256": "ad145a6da8bcf84cb12a06bc0ee868ec26c8d4e6162ea7c62d98b5ffdce3d0bf"
+  },
+  "sllmt_core/__init__.py": {
+   "bytes": 83,
+   "sha256": "27fd1b2b7c1140024963963c3d0ea2f01745c22da9a62ead02bd861b410b7084"
+  },
+  "sllmt_core/answer_guard.py": {
+   "bytes": 51712,
+   "sha256": "c11a856e8b723970d8f807b01fb3eca3fbdcfb6ea567594834db22ce28936255"
+  },
+  "sllmt_core/overrides.py": {
+   "bytes": 2829,
+   "sha256": "e462e395c164c73e72874af9f3506389f65aa41df770d595a4fdab8e4e9b3ebb"
+  },
+  "sllmt_core/recovery.py": {
+   "bytes": 9906,
+   "sha256": "0fc0a0d6d7e66203afa774fee4a0b8c28c6876182beb7ee7eb5ba71e74730978"
+  },
+  "sllmt_core/registry.py": {
+   "bytes": 1895,
+   "sha256": "bca9eea7d9c6f421fdcddfebdf3104c4edc08dbe5d8a1057e9ee53f38f8a8108"
+  },
+  "sllmt_core/report_text.py": {
+   "bytes": 20709,
+   "sha256": "cf6964167c987e485f96f694bb54bbb6c49ecfef74b15eade73c5cabc601d706"
+  },
+  "sllmt_core/run_gate.py": {
+   "bytes": 61081,
+   "sha256": "46be351e1923bc2180fab8cbdfe45382cb83fae32dfa512463e3b96437301888"
+  },
+  "sllmt_tools.py": {
+   "bytes": 131638,
+   "sha256": "3e67c79df685c4460bc8ddcba041be3168618c5cc4452b31169df009ffec3bc8"
+  }
+ }
+}
