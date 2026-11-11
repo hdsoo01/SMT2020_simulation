@@ -1,0 +1,305 @@
+{
+ "repository": "SMT2020_simulation",
+ "created_local": "2026-11-12T02:10:16",
+ "builder": "SLLMT_build/bundle/build_github_bundle.py",
+ "model_hash": "2e57138f9f62643b",
+ "input_hash": "c524856286845676",
+ "baseline_model_hash": [
+  "eb9fcde95b04ff43"
+ ],
+ "baseline_input_hash": [
+  "c524856286845676"
+ ],
+ "recompressed": {
+  "results/pilot_20261014/P00_base_s1/tg_hourly.parquet": {
+   "original_bytes": 32314507,
+   "original_sha256": "5d8899bad92c7f093f3aaaeb30fe6acc8c3ea5601e2bbced4e828f2fda554aac",
+   "encoding": "정수 DELTA_BINARY_PACKED, 실수 BYTE_STREAM_SPLIT, 나머지 사전, zstd 19",
+   "same_table": true
+  },
+  "results/pilot_20261014/P00_base_s2/tg_hourly.parquet": {
+   "original_bytes": 32318562,
+   "original_sha256": "b3bc55947f7059c2d0367c6a510ccea8b001c608070469f3055a958c91439cae",
+   "encoding": "정수 DELTA_BINARY_PACKED, 실수 BYTE_STREAM_SPLIT, 나머지 사전, zstd 19",
+   "same_table": true
+  },
+  "results/pilot_20261014/P00_base_s3/tg_hourly.parquet": {
+   "original_bytes": 32332441,
+   "original_sha256": "bb47c135f3ec7332256101ae1980f34651a262b1a0d4b414c774023685c06826",
+   "encoding": "정수 DELTA_BINARY_PACKED, 실수 BYTE_STREAM_SPLIT, 나머지 사전, zstd 19",
+   "same_table": true
+  },
+  "results/pilot2_20261014/N_base_s4/tg_hourly.parquet": {
+   "original_bytes": 32371115,
+   "original_sha256": "7c72b3caeeb12caff8603a25e41d27cf0a74ac3af6caf64a6d676ea63b814b29",
+   "encoding": "정수 DELTA_BINARY_PACKED, 실수 BYTE_STREAM_SPLIT, 나머지 사전, zstd 19",
+   "same_table": true
+  },
+  "results/pilot2_20261014/N_base_s5/tg_hourly.parquet": {
+   "original_bytes": 32345779,
+   "original_sha256": "06e73f315dc3f522f3e2a5c5ed6a7e5ed6f2afbaebe153f115af9e0242c03bb6",
+   "encoding": "정수 DELTA_BINARY_PACKED, 실수 BYTE_STREAM_SPLIT, 나머지 사전, zstd 19",
+   "same_table": true
+  }
+ },
+ "layout": {
+  "source_package": "code/smt2020_sim",
+  "source_model_hash": "82d1f3926595234f",
+  "package": "smt2020_sim",
+  "edits": {
+   "smt2020_sim/config.py": [
+    [
+     "# config.py -> smt2020_sim -> code -> <repo root>",
+     "# config.py -> smt2020_sim -> <repo root>"
+    ],
+    [
+     "REPO_ROOT: Path = Path(__file__).resolve().parents[2]",
+     "REPO_ROOT: Path = Path(__file__).resolve().parents[1]"
+    ]
+   ],
+   "datagen/runner.py": [
+    [
+     "for p in (ROOT / \"code\", HERE):",
+     "for p in (ROOT, HERE):"
+    ]
+   ],
+   "datagen/scenario.py": [
+    [
+     "str(ROOT / \"code\")",
+     "str(ROOT)"
+    ]
+   ]
+  },
+  "equivalence": "experiments/model_hash_equiv.json (github_flat_layout)"
+ },
+ "files": {
+  ".gitignore": {
+   "bytes": 175,
+   "sha256": "fe39541e7a60bc3b61026c7c503ba4250bf02776972150223fada63a87d65bf3"
+  },
+  "README.md": {
+   "bytes": 2506,
+   "sha256": "d92f8243d3c20481f458b079cd67e1e6a213236f3d4d4014343b79fc1f8dd66b"
+  },
+  "data/SMT_2020_Model_Data_-_LVHM.xlsx": {
+   "bytes": 18062833,
+   "sha256": "c5248562868456761e287a9548906568dcccc7cdb22959410bdb64c0ad3b371f"
+  },
+  "datagen/calib/batch_lots_base.json": {
+   "bytes": 3565,
+   "sha256": "83db0916b765e1280e1d6e05a93425e87484933b1c2c6f6e122d42a355641ff3"
+  },
+  "datagen/calib/cascade_k.json": {
+   "bytes": 1065,
+   "sha256": "1843eb09b0d546d478d4c0d4ed0fce6ce4af353f5ebe33c309f204727772b74d"
+  },
+  "datagen/data_overrides.py": {
+   "bytes": 8860,
+   "sha256": "76d2b337c06855060096e4f845e2987c9aaa9ab99c32c4da2b581cb6bb570d37"
+  },
+  "datagen/downtime_scenarios.py": {
+   "bytes": 6749,
+   "sha256": "5662308480dd1eb710f1cb76c099d9e4ac43890a01af7418d0951433295e67a4"
+  },
+  "datagen/extensions.py": {
+   "bytes": 8222,
+   "sha256": "d07e4a167f0221ac63f0022e2472f099e6b708101120aa2d1a53c7f7a57e1bac"
+  },
+  "datagen/product_groups.json": {
+   "bytes": 757,
+   "sha256": "e63009d58961f0dbc59c3e1f0211cfb6cf65b08affe2ee1557d17b232f97718f"
+  },
+  "datagen/run_batch.py": {
+   "bytes": 7241,
+   "sha256": "7e9d84d4484b8c95dc45ac9a2d63066dcff9a3f9e4375abe123d2120cd282f6c"
+  },
+  "datagen/runner.py": {
+   "bytes": 28733,
+   "sha256": "3d8eb6bec3140b7acadc17089e290d5eef93d2cdbe157b39f527b709d1242d37"
+  },
+  "datagen/scenario.py": {
+   "bytes": 28581,
+   "sha256": "8b94f08e8635eac9da1df82547a64b94f1a09c5ed125add79af133af8a9625f5"
+  },
+  "datagen/static_load.py": {
+   "bytes": 6100,
+   "sha256": "3af87117bdd74ec97fa2654037edfd2d1ee1152b37f00e4b60b766bd626a78ce"
+  },
+  "examples/demo/demo_s1.json": {
+   "bytes": 183,
+   "sha256": "915b9a906f59319862c57682a6e5a80ecdb8e55d2b305807ef1b1866c4e2dd5d"
+  },
+  "experiments/model_hash_equiv.json": {
+   "bytes": 1897,
+   "sha256": "1e8cb8f0a1ffa35cd0b8bfa44114494573e65c8de54ae9bd71590a36942c165c"
+  },
+  "experiments/whatif_report.py": {
+   "bytes": 24917,
+   "sha256": "6059ac1bc0fbffb4981d5449ab5282f68c8bbf64e43cd29cc53bb4c8fc001146"
+  },
+  "requirements.txt": {
+   "bytes": 190,
+   "sha256": "2a6369682413c8adf9ff1e091e10581b8ebb85cfeea7f1fd5a6f002725c81669"
+  },
+  "results/pilot2_20261014/N_base_s4/lots.parquet": {
+   "bytes": 854341,
+   "sha256": "01f2b2ed9b453fb8da11892320585b7a34af0c0f207fd06c8cec33827e1196da"
+  },
+  "results/pilot2_20261014/N_base_s4/run_meta.json": {
+   "bytes": 870,
+   "sha256": "6d7f890dcbb3f8662095722f0c6494020e577b1a291ee3a68bfb134644948a2a"
+  },
+  "results/pilot2_20261014/N_base_s4/spec.json": {
+   "bytes": 1161,
+   "sha256": "f8babef111c3e88a6b7cdf63d043a64b75c771beedbed6340c5ac98fdab29bf9"
+  },
+  "results/pilot2_20261014/N_base_s4/tg_hourly.parquet": {
+   "bytes": 19895277,
+   "sha256": "f011cd0b18fd997db2acc889afd960c76ff036ee45c939e63900fe26eb8dc4bb"
+  },
+  "results/pilot2_20261014/N_base_s5/lots.parquet": {
+   "bytes": 854306,
+   "sha256": "47d71a2b68af0c0b902486f3dc0ad28b65288c705a6f22bb09cd726f6408e456"
+  },
+  "results/pilot2_20261014/N_base_s5/run_meta.json": {
+   "bytes": 870,
+   "sha256": "cd8df13267fe92fe589b3c11d33e817875034c7433bb92758e11bbd4f9661308"
+  },
+  "results/pilot2_20261014/N_base_s5/spec.json": {
+   "bytes": 1161,
+   "sha256": "7713d8378e60dd3ed11d9bdb827ea938289a1902eb2a48d6820824ba39c364e4"
+  },
+  "results/pilot2_20261014/N_base_s5/tg_hourly.parquet": {
+   "bytes": 19877600,
+   "sha256": "eb2e0d42650dc4ab2718d93c8f0ec2844b39d26b11c52d247d1ce6a2a6f0cf7e"
+  },
+  "results/pilot_20261014/P00_base_s1/lots.parquet": {
+   "bytes": 854992,
+   "sha256": "4d0642a203245b362bb89960456b5d63235d4826d369033a9b0051e1bc37db41"
+  },
+  "results/pilot_20261014/P00_base_s1/run_meta.json": {
+   "bytes": 747,
+   "sha256": "3209e0b1ad33e10f6bbee5bf6f5782d2cd5515e94a4369c657bfdb269c33a478"
+  },
+  "results/pilot_20261014/P00_base_s1/spec.json": {
+   "bytes": 1031,
+   "sha256": "10e412e3649b94c4a1f497ca8b955ae5a35458f467c1e3eaef73ad527bc97fc1"
+  },
+  "results/pilot_20261014/P00_base_s1/tg_hourly.parquet": {
+   "bytes": 19869161,
+   "sha256": "ec08c932505df735942507e9adc9e85ad50cc10287bfa1ca2c9c773dadd12577"
+  },
+  "results/pilot_20261014/P00_base_s2/lots.parquet": {
+   "bytes": 854946,
+   "sha256": "c894bdf4ae6b17ec7225ad856102454f504a353b1e2c4448cc0bcb84f535f5d6"
+  },
+  "results/pilot_20261014/P00_base_s2/run_meta.json": {
+   "bytes": 747,
+   "sha256": "10798f7ad900d0a478c63f8b02d3a756193868ffb3da5c9b34177e599df10794"
+  },
+  "results/pilot_20261014/P00_base_s2/spec.json": {
+   "bytes": 1031,
+   "sha256": "a57bb4e52574c491d1397c510e8387c378f68b077ec7538fd80b93009eed1b4f"
+  },
+  "results/pilot_20261014/P00_base_s2/tg_hourly.parquet": {
+   "bytes": 19855396,
+   "sha256": "a292331c9cf1f3fefeb78c96a554f1a1b62751d67d4432e71bb9bc30a6d1a90e"
+  },
+  "results/pilot_20261014/P00_base_s3/lots.parquet": {
+   "bytes": 854791,
+   "sha256": "2b1ebbabf56b8e469deb58664c96ea88ed9168c2aba9033104bb1bddc7fd9510"
+  },
+  "results/pilot_20261014/P00_base_s3/run_meta.json": {
+   "bytes": 747,
+   "sha256": "534a0afd74b778808d6bf1fb79d0342ae1bbf3d0125852a5b42a6b5e04f80a96"
+  },
+  "results/pilot_20261014/P00_base_s3/spec.json": {
+   "bytes": 1031,
+   "sha256": "916b7218f29fc91a39dc9afbf45cb2b5e3f88b86d6bfae8c1ffb38b5d81bb070"
+  },
+  "results/pilot_20261014/P00_base_s3/tg_hourly.parquet": {
+   "bytes": 19874300,
+   "sha256": "02cb4dd24b384b03d7dedc3c2e458d8ebea51a9d8b3806e63f81b9d396c70f5f"
+  },
+  "smt2020_sim/__init__.py": {
+   "bytes": 756,
+   "sha256": "609b720f86dd80d5555247480d505fcae4abfd3d319185bbc19acf520c08c981"
+  },
+  "smt2020_sim/analysis.py": {
+   "bytes": 17501,
+   "sha256": "9bf73942c94e7062f80b3734ff4e77c3e994331dd475cbc3e28b3a7f602dd9b2"
+  },
+  "smt2020_sim/config.py": {
+   "bytes": 16424,
+   "sha256": "56d7696471a7292be15f00056a6c3a2d342ea2821f90f524e191bb03ef86fdbf"
+  },
+  "smt2020_sim/data_parser.py": {
+   "bytes": 48893,
+   "sha256": "c1bc84b5d298bc4959a888176cb8292d7deda753b05be899a144919c520a9705"
+  },
+  "smt2020_sim/dispatch_audit.py": {
+   "bytes": 9027,
+   "sha256": "744dd216d20efafff5a437efa560c704bee4aa5a1a1c3b84cdee2031661ba57d"
+  },
+  "smt2020_sim/dispatching.py": {
+   "bytes": 36976,
+   "sha256": "51e4c15ec09724c7e5eef642607518fcf85830475c9b835580b5be432a67e8f9"
+  },
+  "smt2020_sim/downtime.py": {
+   "bytes": 6833,
+   "sha256": "c855473bc09e379fb7f26471e4b276f199e7fd6085392ed44656c4c7c80df990"
+  },
+  "smt2020_sim/fab_model.py": {
+   "bytes": 106027,
+   "sha256": "90a7dc771dd2fe96cfe862d37e6e7ce8e726c7b70170c9f09671f44d08411fe4"
+  },
+  "smt2020_sim/kpi_collector.py": {
+   "bytes": 143740,
+   "sha256": "e15a02cf7b23817756d634f89c00eae405391b9bcf3633c5dad3f727f4619df9"
+  },
+  "smt2020_sim/kpi_explorer.py": {
+   "bytes": 85150,
+   "sha256": "bfbb7e5e61238034af6c133144e7eb7b16e6952c7c813927ddfb8d533fce98b5"
+  },
+  "smt2020_sim/kpi_streaming.py": {
+   "bytes": 22269,
+   "sha256": "43653068e6261c1c207fa4bc3146b218b77b5cd06b1356b5e0cae89812b8f990"
+  },
+  "smt2020_sim/kpi_tables.py": {
+   "bytes": 9230,
+   "sha256": "efe113aa3d1a9a0bea8b5d1bb1a85cad5c7e806ba3a747b77fe4df1b913e0c70"
+  },
+  "smt2020_sim/logistics.py": {
+   "bytes": 4695,
+   "sha256": "447929e7ead5af7824b828d40237217b8f18f5eb8f33714c7a991b13d133b2ef"
+  },
+  "smt2020_sim/lot.py": {
+   "bytes": 11827,
+   "sha256": "45159a5692ab254ceb2ae443de02bfdec501e027b66614a2d9e79647e92fed24"
+  },
+  "smt2020_sim/main.py": {
+   "bytes": 19368,
+   "sha256": "908316faf3e6b89115c1469ee98c2aa22aaa9d0af7caf20c8c8dd8bfbdec69bd"
+  },
+  "smt2020_sim/model_data.py": {
+   "bytes": 10892,
+   "sha256": "07dc88c83becfc1c55003852cd79a9f6ded8678dd828a6a9b7f2027f9bc43506"
+  },
+  "smt2020_sim/paper.py": {
+   "bytes": 8968,
+   "sha256": "2c7caf7b95782985d439c3279242c2a73c8c125cecf89deec1e48ead3c18341f"
+  },
+  "smt2020_sim/priority_analysis.py": {
+   "bytes": 10459,
+   "sha256": "b4373b52f0ed6929a8320f7f5af9ac1cdf59298416523990e9da6f3e4a41990d"
+  },
+  "smt2020_sim/setup.py": {
+   "bytes": 6337,
+   "sha256": "a0280a13e12e6fe31dc86b3d533ed6c213fffb53e76f3a49e97b5e1cc7fbe577"
+  },
+  "smt2020_sim/tool.py": {
+   "bytes": 26372,
+   "sha256": "4c92e91d338abbf555dba2ec15fb6c70a02d63e84405bc6390a7f06c19bba120"
+  }
+ }
+}

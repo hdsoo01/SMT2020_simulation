@@ -1,0 +1,29 @@
+{
+ "note": "결과가 같다고 확인한 시뮬레이터 코드 지문(model_hash) 묶음. whatif_report 는 같은 묶음의 지문을 같은 모델로 보고 짝 비교한다. 확인 없이 항목을 더하지 않는다.",
+ "groups": [
+  {
+   "hashes": [
+    "eb9fcde95b04ff43",
+    "82d1f3926595234f",
+    "2e57138f9f62643b"
+   ],
+   "added": "2026-11-09",
+   "change": "디스패칭 순서 변경 베타 (SLLMT D-88): dispatching.py·fab_model.py·dispatch_audit.py. 시나리오에 dispatch 규칙이 없으면 바뀐 함수가 모두 예전 값을 돌려줌 (규칙 없는 경로는 코드상 같음)",
+   "evidence": [
+    "seed 1, 3주·10주: 고치기 전 코드(eb9fcde…)와 새 코드(82d1f…) 실행의 parquet 8개·csv·snapshot(시간 무관 항목) 모두 같음",
+    "seed 1, 10주: 10월 기준 운영 results/pilot_20261014/P00_base_s1(eb9fcde…)의 앞 10주 tg_hourly·lot 투입·납기·끝난 정지 이력이 새 코드 실행과 같음",
+    "연구 시험: 기존 디스패칭 시험 20개 + test_dispatch_beta.py 7개 통과"
+   ],
+   "scope": "dispatch 규칙이 있는 실행은 일부러 다른 결과다 — 이 묶음은 '규칙 없는 기준 운영과 같은 모델'이라는 뜻",
+   "github_flat_layout": {
+    "hash": "2e57138f9f62643b",
+    "added": "2026-11-12",
+    "change": "GitHub 시뮬레이션 저장소 배치: code/ 를 없애 smt2020_sim 을 맨 위로 옮김. 82d1f3926595234f 와 config.py 의 REPO_ROOT 줄(parents[2]→parents[1], 같은 저장소 맨 위를 가리킴)과 그 주석만 다름",
+    "evidence": [
+     "build_github_bundle.py 가 원본 82d1f3926595234f 에서만 만들고, config.py 밖의 *.py 가 바이트까지 같음을 확인",
+     "seed 1, 3주 데모(examples/demo): 연구 폴더(82d1f3926595234f) 실행과 저장소(2e57138f9f62643b) 실행의 parquet·csv 10개 모두 같음 (11-12)"
+    ]
+   }
+  }
+ ]
+}

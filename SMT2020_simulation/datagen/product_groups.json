@@ -1,0 +1,21 @@
+{
+  "default": "tier",
+  "groupings": {
+    "tier": {
+      "description": "공정 길이·lot당 용량 사용량 3단계 (datagen/analysis/product_grouping.py)",
+      "groups": {
+        "A_long":  ["Product_1", "Product_2", "Product_3"],
+        "B_mid":   ["Product_7", "Product_8", "Product_9", "Product_10"],
+        "C_short": ["Product_4", "Product_5", "Product_6"]
+      }
+    },
+    "affinity": {
+      "description": "Litho 3개 병목 후보 중 상대 부하가 가장 큰 쪽 (datagen/analysis/group_grid.py)",
+      "groups": {
+        "G_FE111": ["Product_1", "Product_5", "Product_9"],
+        "G_BE110": ["Product_3", "Product_6", "Product_8"],
+        "G_FE92":  ["Product_2", "Product_4", "Product_7", "Product_10"]
+      }
+    }
+  }
+}
