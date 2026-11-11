@@ -1,0 +1,44 @@
+{
+ "name": "P00_base_s2",
+ "seed": 2,
+ "end_week": 72,
+ "label_start_week": 20,
+ "runtime_s": 2303.6,
+ "peak_rss_mb": 510.8,
+ "model_hash": "eb9fcde95b04ff43",
+ "input_hash": "c524856286845676",
+ "lots_released": 28836,
+ "lots_completed": 26764,
+ "active_periods": 3044006,
+ "warnings": {},
+ "buckets": [
+  "process",
+  "setup",
+  "load_unload",
+  "transport",
+  "delay",
+  "queue",
+  "wait_down",
+  "wait_batch",
+  "wait_gate",
+  "wait_dedicated",
+  "wait_reserved"
+ ],
+ "lot_types": {
+  "regular": 0,
+  "hot": 1,
+  "superhot": 2
+ },
+ "products": [
+  "Product_1",
+  "Product_2",
+  "Product_3",
+  "Product_4",
+  "Product_5",
+  "Product_6",
+  "Product_7",
+  "Product_8",
+  "Product_9",
+  "Product_10"
+ ]
+}

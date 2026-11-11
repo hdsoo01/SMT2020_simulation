@@ -1,0 +1,66 @@
+{
+ "spec": {
+  "name": "P00_base_s2",
+  "seed": 2,
+  "phases": [
+   {
+    "start_week": 0,
+    "group_mult": {
+     "A_long": 1.0,
+     "B_mid": 1.0,
+     "C_short": 1.0
+    }
+   }
+  ],
+  "grouping": "tier",
+  "end_week": 72,
+  "label_start_week": 20
+ },
+ "phases": [
+  {
+   "start_week": 0,
+   "grouping": "tier",
+   "group_wspw_regular": {
+    "A_long": 2925.0,
+    "B_mid": 3900.0,
+    "C_short": 2925.0
+   },
+   "total_wspw": 10009.0,
+   "product_mult": {
+    "Product_1": 1.0,
+    "Product_2": 1.0,
+    "Product_3": 1.0,
+    "Product_4": 1.0,
+    "Product_5": 1.0,
+    "Product_6": 1.0,
+    "Product_7": 1.0,
+    "Product_8": 1.0,
+    "Product_9": 1.0,
+    "Product_10": 1.0
+   },
+   "static_top5": [
+    [
+     "Litho_FE_111",
+     96.7
+    ],
+    [
+     "Litho_BE_110",
+     96.16
+    ],
+    [
+     "Litho_FE_92",
+     95.87
+    ],
+    [
+     "Diffusion_FE_100",
+     92.13
+    ],
+    [
+     "LithoMet_FE_19",
+     91.65
+    ]
+   ],
+   "problems": []
+  }
+ ]
+}
