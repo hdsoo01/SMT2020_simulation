@@ -1,0 +1,7 @@
+# 새로 돌린 결과는 올리지 않고, 기준 운영 결과만 둔다
+results/*
+!results/pilot_20261014/
+!results/pilot2_20261014/
+.venv/
+__pycache__/
+*.pyc
